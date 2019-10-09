@@ -1,6 +1,7 @@
+import { CHANGE_TEXT } from '../action/root.action';
 const textReducer = (state, action) => {
   switch (action.type) {
-    case 'changeText':
+    case CHANGE_TEXT:
       return {
         ...state,
         text1: action.newText
